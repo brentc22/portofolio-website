@@ -1,0 +1,33 @@
+/*navbar */
+.navbar-custom {
+    background-color: #5B5D55 !important; /* Blauw */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: white !important; /* Witte tekst */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Goudkleur bij hover */
+  }
+  
+  .navbar-custom .navbar-toggler {
+    border-color: white !important;
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    filter: invert(1); /* Witte toggler-icoon */
+  }
+  
+  .navbar-custom .btn-outline-secondary {
+    color: white !important;
+    border-color: white !important;
+  }
+  
+  /*knop*/
+  .navbar-custom .btn-outline-secondary:hover {
+    background-color: white !important;
+    color: #0047AB !important;
+  }
+  
+  
