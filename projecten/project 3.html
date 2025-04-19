@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">Brent Ceulemans</a>
+    <div>
+      <a class="nav-link d-inline text-white" href="/index.html">home</a>
+      <a class="nav-link d-inline text-white" href="/portofolio.html">portofolio</a>
+      <a class="nav-link d-inline text-white" href="/contact.html">contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+  <h1>IOT Dog Daycare Robot with Dog Food & Water Feeding</h1>
+  <p class="text-muted">Een slim robotsysteem voor de verzorging en voeding van huisdieren op afstand</p>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+  <!-- Afbeelding + korte beschrijving -->
+  <div class="row section">
+    <div class="col-md-6">
+      <img src="/assets/foto/project 3.jpg" alt="IOT Dog Daycare Robot" class="project-image">
+    </div>
+    <div class="col-md-6">
+      <h3 class="section-title">Projectoverzicht</h3>
+      <p>
+        Deze IoT-huisdierenrobot is ontworpen om automatisch honden te voeren en van water te voorzien wanneer de eigenaar afwezig is. 
+        De robot wordt op afstand bestuurd via een mobiele app of webinterface, en kan via camera livebeelden tonen van de hond.
+      </p>
+      <p>
+        Door gebruik te maken van verschillende sensoren en actuatoren kan het systeem voedsel en water doseren, beweging detecteren 
+        en communiceren via een speaker of microfoon. Ideaal voor drukbezette baasjes die hun huisdier toch goed willen verzorgen.
+      </p>
+    </div>
+  </div>
+
+  <!-- Werking -->
+  <div class="row section">
+    <div class="col">
+      <h3 class="section-title">Hoe werkt het?</h3>
+      <p>
+        De robot is uitgerust met een camera, voedsel- en waterdispenser, en wordt aangedreven door een ESP32-controller. 
+        Via een app kan de gebruiker de robot op afstand besturen, beelden live bekijken en voedsel of water vrijgeven.
+      </p>
+      <p>
+        Bewegingssensoren detecteren de aanwezigheid van de hond. Op basis van ingestelde tijden of handmatige bediening wordt voedsel 
+        of water vrijgegeven. De camera biedt visuele feedback en kan eventueel worden gekoppeld aan AI voor gedragsherkenning.
+      </p>
+    </div>
+  </div>
+
+  <!-- Gebruikte componenten -->
+  <div class="row section">
+    <div class="col">
+      <h3 class="section-title">Gebruikte Hardware & Software</h3>
+      <ul>
+        <li><strong>Microcontroller:</strong> ESP32</li>
+        <li><strong>Sensoren:</strong> PIR sensor, vochtsensor</li>
+        <li><strong>Actuatoren:</strong> Servo's of motoren voor dispensers</li>
+        <li><strong>Camera:</strong> ESP32-CAM module</li>
+        <li><strong>Netwerk:</strong> WiFi via ESP32</li>
+        <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
+        <li><strong>Communicatie:</strong> MQTT of Firebase</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Mogelijke uitbreidingen -->
+  <div class="row section">
+    <div class="col">
+      <h3 class="section-title">Mogelijke Uitbreidingen</h3>
+      <ul>
+        <li>AI-integratie voor gedragsherkenning van de hond</li>
+        <li>Spraakcommunicatie via microfoon en speaker</li>
+        <li>GPS-tracking bij gebruik in grotere ruimtes</li>
+        <li>Automatisch bijvullen van voedsel- en waterreservoirs</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Terugknop -->
+  <div class="row mt-5">
+    <div class="col text-center">
+      <a href="/portofolio.html" class="btn btn-primary">← Terug naar portfolio</a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
