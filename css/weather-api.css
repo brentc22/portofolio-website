@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+#weather-container {
+    margin-top: 20px;
+    border: 1px solid #007bff;
+    padding: 15px;
+    border-radius: 5px;
+}
+.weather-info {
+    margin-bottom: 10px;
+}
+#error {
+    color: red;
+    margin-top: 10px;
+}

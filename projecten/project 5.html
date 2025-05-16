@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project5</title>
+    <title>project2</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,6 +13,8 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/weather-api.css">
+    <script src="/JS/weather-api.js" defer></script>
 
     
 </head>
@@ -42,23 +45,24 @@
 
 <header class="header bg-light py-5">
     <div class="container">
-        <h1>IoT Based Smart Irrigation System</h1>
-        <p class="lead text-muted">Automatisch bewateringssysteem voor efficiënte tuin- en landbouwtoepassingen</p>
+        <h1>Contactless IOT Doorbell & Security System</h1>
+        <p class="lead text-muted">Een slim en veilig deurbel- en beveiligingssysteem gebaseerd op IoT</p>
     </div>
 </header>
 
 <main class="container py-5">
     <section class="row mb-4">
         <div class="col-md-6">
-            <img src="/assets/foto/project 5.webp" alt="Automatic Parking System" class="img-fluid rounded shadow-sm">
+            <img src="/assets/foto/project 2.jpg" alt="Automatic Parking System" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center">
             <h2 class="section-title mb-3 text-primary">Projectoverzicht</h2>
             <p>
-                Dit slimme irrigatiesysteem is ontworpen om planten automatisch water te geven op basis van de vochtigheid in de grond. 
-                Via een app of webinterface kan de gebruiker het systeem inplannen of handmatig bedienen – ideaal voor tuinliefhebbers en boeren.
-                Het systeem maakt gebruik van IoT-technologie om real-time gegevens te verzamelen en slimme beslissingen te nemen 
-                over wanneer en hoeveel water nodig is, waardoor zowel water als tijd wordt bespaard.
+                Dit slimme deurbel- en beveiligingssysteem maakt gebruik van IoT-technologie om bezoekers te detecteren zonder fysieke interactie. 
+        Zodra beweging wordt gedetecteerd bij de deur, stuurt het systeem een melding naar een gekoppelde smartphone of webinterface. 
+        Het systeem bevat een camera om live beelden te streamen of op te slaan, en een buzzer om bewoners te waarschuwen.
+        Het doel is om veilige, contactloze interactie mogelijk te maken en de bewoner in real-time te informeren over bezoekers, 
+        zelfs als deze niet thuis is.
             </p>
         </div>
     </section>
@@ -67,25 +71,25 @@
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Hoe werkt het?</h2>
             <p>
-                Grondvochtigheidssensoren meten continu de vochtigheidsgraad van de bodem. Wanneer de waarde onder een ingestelde drempel zakt, 
-                activeert de controller automatisch de waterpomp of magneetklep.
-                De gegevens worden via WiFi verzonden naar een webinterface of mobiele app. Gebruikers kunnen de status van hun planten volgen, 
-                irrigatiegeschiedenis bekijken en het systeem op afstand activeren of pauzeren.
+                Zodra de bewegingssensor een persoon detecteert, activeert de microcontroller een camera en verzendt het een melding 
+        via WiFi naar een gekoppeld apparaat. De buzzer gaat af en de gebruiker krijgt de mogelijkheid om via een app of 
+        browser te communiceren of live mee te kijken.
+            </p>
+            <p>
+                Alle componenten worden realtime aangestuurd door een ESP32 en communiceren via MQTT of HTTP requests naar een lokale server of cloudplatform.
+
             </p>
         </div>
     </section>
 
-    <section class="row mb-4">
-        <div class="col">
-            <h2 class="section-title mb-3 text-primary">Temperatuur vandaag in Berlijn</h2>
-            <div id="weather-container">
-                <iframe src="https://api.meteomatics.com/2025-05-16T00:00:00Z/t_2m:C/52.520551,13.461804/html" 
-                        width="100%" 
-                        height="300px"  
-                        frameborder="0"
-                        style="border: 1px solid #ccc; border-radius: 5px;">
-                </iframe>
-            </div>
+    <section>
+      <h2 class="section-title mb-3 text-primary">Huidig Weer</h2>
+      
+
+    <div id="weather-container">
+        </div>
+
+    <div id="error">
         </div>
     </section>
 
@@ -94,12 +98,12 @@
             <h2 class="section-title mb-3 text-primary">Gebruikte Hardware &amp; Software</h2>
             <ul>
                 <li><strong>Microcontroller:</strong> ESP32</li>
-                <li><strong>Sensoren:</strong> Grondvochtigheidssensor (capacitive soil sensor)</li>
-                <li><strong>Actuatoren:</strong> Waterpomp of magneetklep</li>
-                <li><strong>Netwerk:</strong> WiFi (ESP32)</li>
+                <li><strong>Sensoren:</strong> PIR bewegingssensor</li>
+                <li><strong>Camera:</strong> ESP32-CAM module</li>
+                <li><strong>Signaal:</strong> Buzzer / LED</li>
+                <li><strong>Netwerk:</strong> WiFi via ESP32</li>
                 <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
-                <li><strong>Interface:</strong> Webinterface / mobiele app</li>
-                <li><strong>Communicatie:</strong> MQTT of HTTP API</li>
+                <li><strong>Communicatie:</strong> MQTT of HTTP</li>
             </ul>
         </div>
     </section>
@@ -110,10 +114,10 @@
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Mogelijke Uitbreidingen</h2>
             <ul>
-                <li>Weersvoorspelling integratie om regenbuien te detecteren</li>
-                <li>Meerdere zones met afzonderlijke controle</li>
-                <li>Automatische mestdistributie (fertigatie)</li>
-                <li>Solar powered systeem voor off-grid gebruik</li>
+                <li>Gezichtsherkenning met AI voor automatische toegangscontrole</li>
+                <li>Cloud-opslag van videobeelden</li>
+                <li>Integratie met smart home systemen (zoals Home Assistant)</li>
+                <li>Voedingsoptie via zonnepaneel</li>
             </ul>
         </div>
     </section>
