@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project6</title>
+    <title>project5</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -42,8 +42,8 @@
 
 <header class="header bg-light py-5">
     <div class="container">
-        <h1>Smart Alarm Clock</h1>
-        <p class="lead text-muted">Een slimme wekker met connectiviteit, sensoren en persoonlijke aanpassing</p>
+        <h1>IoT Based Smart Irrigation System</h1>
+        <p class="lead text-muted">Automatisch bewateringssysteem voor efficiënte tuin- en landbouwtoepassingen</p>
     </div>
 </header>
 
@@ -55,11 +55,10 @@
         <div class="col-md-6 d-flex flex-column justify-content-center">
             <h2 class="section-title mb-3 text-primary">Projectoverzicht</h2>
             <p>
-                De Smart Alarm Clock is een slimme wekker die veel verder gaat dan alleen een alarm afspelen. 
-                Het apparaat houdt rekening met je slaapritme, lichtsterkte in de kamer, en zelfs het weer, 
-                om je op het ideale moment wakker te maken.
-                Gebruikers kunnen via een webinterface of mobiele app alarmen instellen, thema’s aanpassen, 
-                en integraties activeren zoals Spotify of slimme verlichting.
+                Dit slimme irrigatiesysteem is ontworpen om planten automatisch water te geven op basis van de vochtigheid in de grond. 
+                Via een app of webinterface kan de gebruiker het systeem inplannen of handmatig bedienen – ideaal voor tuinliefhebbers en boeren.
+                Het systeem maakt gebruik van IoT-technologie om real-time gegevens te verzamelen en slimme beslissingen te nemen 
+                over wanneer en hoeveel water nodig is, waardoor zowel water als tijd wordt bespaard.
             </p>
         </div>
     </section>
@@ -68,11 +67,25 @@
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Hoe werkt het?</h2>
             <p>
-                De wekker synchroniseert met een real-time klokmodule en slaat alarmen op in EEPROM of via een online database. 
-                Slaapmonitoring gebeurt aan de hand van omgevingssensoren of een gekoppelde wearable.
-                Wanneer het tijd is om wakker te worden, kan het systeem zachte verlichting activeren, 
-                muziek afspelen en zelfs live weersinformatie tonen op het display.
+                Grondvochtigheidssensoren meten continu de vochtigheidsgraad van de bodem. Wanneer de waarde onder een ingestelde drempel zakt, 
+                activeert de controller automatisch de waterpomp of magneetklep.
+                De gegevens worden via WiFi verzonden naar een webinterface of mobiele app. Gebruikers kunnen de status van hun planten volgen, 
+                irrigatiegeschiedenis bekijken en het systeem op afstand activeren of pauzeren.
             </p>
+        </div>
+    </section>
+
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Temperatuur vandaag in Berlijn</h2>
+            <div id="weather-container">
+                <iframe src="https://api.meteomatics.com/now/t_2m:C/52.520551,13.461804/html"
+        width="100%"
+        height="300px"
+        frameborder="0"
+        style="border: 1px solid #ccc; border-radius: 5px;">
+</iframe>
+            </div>
         </div>
     </section>
 
@@ -81,14 +94,12 @@
             <h2 class="section-title mb-3 text-primary">Gebruikte Hardware &amp; Software</h2>
             <ul>
                 <li><strong>Microcontroller:</strong> ESP32</li>
-                <li><strong>Display:</strong> TFT of OLED scherm voor tijd en info</li>
-                <li><strong>RTC Module:</strong> DS3231 voor accurate tijd</li>
-                <li><strong>Sensoren:</strong> Licht-, temperatuur- of bewegingssensor</li>
-                <li><strong>Audio:</strong> Buzzer of mini speaker via I2S</li>
+                <li><strong>Sensoren:</strong> Grondvochtigheidssensor (capacitive soil sensor)</li>
+                <li><strong>Actuatoren:</strong> Waterpomp of magneetklep</li>
                 <li><strong>Netwerk:</strong> WiFi (ESP32)</li>
                 <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
-                <li><strong>Interface:</strong> Webinterface of mobiele app</li>
-                <li><strong>Communicatie:</strong> MQTT / HTTP / NTP voor tijd</li>
+                <li><strong>Interface:</strong> Webinterface / mobiele app</li>
+                <li><strong>Communicatie:</strong> MQTT of HTTP API</li>
             </ul>
         </div>
     </section>
@@ -99,17 +110,17 @@
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Mogelijke Uitbreidingen</h2>
             <ul>
-                <li>Integratie met Google Calendar voor afspraken</li>
-                <li>Wake-up light met RGB LED strip</li>
-                <li>Spraakbediening via Google Assistant of Alexa</li>
-                <li>Slaapherkenning via microfoon of versnellingsmeter</li>
+                <li>Weersvoorspelling integratie om regenbuien te detecteren</li>
+                <li>Meerdere zones met afzonderlijke controle</li>
+                <li>Automatische mestdistributie (fertigatie)</li>
+                <li>Solar powered systeem voor off-grid gebruik</li>
             </ul>
         </div>
     </section>
 
     <div class="row mt-5">
         <div class="col text-center">
-            <a href="/portofolio.html" class="btn btn-primary">← Terug naar portfolio</a>
+            <a href="/portfolio.html" class="btn btn-primary">← Terug naar portfolio</a>
         </div>
     </div>
 
