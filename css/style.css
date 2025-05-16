@@ -47,6 +47,7 @@
  
   body {
     text-align: center;
+    
   }
   section {
     margin-top: 50px;
@@ -82,9 +83,12 @@
 
 
   /* detailpagina project*/ 
+  header {
+    background-color: lightgray;
+  }
   
   body {
-    background-color: #f5f9ff;
+    background-color: lightgray;
   }
   .navbar {
     background-color: #2196f3;
