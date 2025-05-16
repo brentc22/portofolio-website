@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
+    <title>project6</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,117 +12,118 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .project-overview {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
 
-        .project-image-container {
-            flex: 1 0 300px; /* Minimum width for the image */
-        }
-
-        .project-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .project-description {
-            flex: 1 0 300px; /* Minimum width for the text */
-        }
-
-        .section-title {
-            margin-top: 0;
-        }
-
-        @media (min-width: 768px) {
-            .project-overview {
-                flex-direction: row;
-            }
-        }
-    </style>
-
+    
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand text-white" href="#">Brent ceulemans</a>
-          <div>
-            <a class="nav-link d-inline text-white" href="/index.html">home</a>
-            <a class="nav-link d-inline text-white" href="/portofolio.html">portofolio</a>
-            <a class="nav-link d-inline text-white" href="/contact.html">contact</a>
-          </div>
+    <nav class="navbar navbar-expand-md navbar-custom container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/foto/logooooo.png" alt="Brent ceulemans" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active"  href="/index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="/portfolio.html">portofolio</a>
+            </li>
+        
+            <li class="nav-item">
+              <a class="nav-link"  href="/contact.html">contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
-<header class="header">
-    <h1>Automatic Parking System</h1>
-    <p class="text-muted">Een slim systeem voor zelfrijdende parkeeracties zonder menselijke tussenkomst</p>
+<header class="header bg-light py-5">
+    <div class="container">
+        <h1>Smart Alarm Clock</h1>
+        <p class="lead text-muted">Een slimme wekker met connectiviteit, sensoren en persoonlijke aanpassing</p>
+    </div>
 </header>
 
-<main class="container">
-
-    <section class="project-overview">
-        <div class="project-image-container">
-            <img src="assets/foto/project 1.jpg" alt="Automatic Parking System" class="project-image">
+<main class="container py-5">
+    <section class="row mb-4">
+        <div class="col-md-6">
+            <img src="/assets/foto/project 5.webp" alt="Automatic Parking System" class="img-fluid rounded shadow-sm">
         </div>
-        <article class="project-description">
-            <h3 class="section-title">Projectoverzicht</h3>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="section-title mb-3 text-primary">Projectoverzicht</h2>
             <p>
-                This system aims at replacing the conventional parking system with an IoT-based smart parking system by using RFID (radio-frequency identification). The users will be provided an entry card for getting access to the parking slot. The users will also be provided with an android based mobile application, using which they can know about the availability of the parking slot on their mobile phones. The users will need to maintain a minimum amount of balance in their entry card for getting access through the parking system, otherwise, the system will deny the access to enter. In this way, this smart parking system will help reduce human effort & time by using automation technology.
+                De Smart Alarm Clock is een slimme wekker die veel verder gaat dan alleen een alarm afspelen. 
+                Het apparaat houdt rekening met je slaapritme, lichtsterkte in de kamer, en zelfs het weer, 
+                om je op het ideale moment wakker te maken.
+                Gebruikers kunnen via een webinterface of mobiele app alarmen instellen, thema’s aanpassen, 
+                en integraties activeren zoals Spotify of slimme verlichting.
             </p>
-        </article>
+        </div>
     </section>
 
-    <section class="row section">
-        <article class="col">
-            <h3 class="section-title">Hoe werkt het?</h3>
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Hoe werkt het?</h2>
             <p>
-                Het systeem bestaat uit een op schaal gemaakt voertuig dat is uitgerust met ultrasone sensoren om obstakels en afstanden te meten.
-                Wanneer het voertuig wordt gestart, zoekt het automatisch naar een vrije ruimte. Zodra die wordt gedetecteerd, berekent het systeem
-                de benodigde bewegingen om accuraat te parkeren.
+                De wekker synchroniseert met een real-time klokmodule en slaat alarmen op in EEPROM of via een online database. 
+                Slaapmonitoring gebeurt aan de hand van omgevingssensoren of een gekoppelde wearable.
+                Wanneer het tijd is om wakker te worden, kan het systeem zachte verlichting activeren, 
+                muziek afspelen en zelfs live weersinformatie tonen op het display.
             </p>
-            <p>
-                Motoren worden aangestuurd via een H-brug, terwijl de sensordata realtime verwerkt worden door een microcontroller
-                (zoals Arduino of ESP32). De status van het systeem wordt weergegeven via LED’s of een LCD-scherm.
-            </p>
-        </article>
+        </div>
     </section>
 
-    <section class="row section">
-        <article class="col">
-            <h3 class="section-title">Gebruikte Hardware & Software</h3>
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Gebruikte Hardware &amp; Software</h2>
             <ul>
-                <li><strong>Microcontroller:</strong> ESP32 of Arduino Uno</li>
-                <li><strong>Sensoren:</strong> HC-SR04 ultrasoon sensoren, IR sensoren</li>
-                <li><strong>Motoren:</strong> 2x DC motoren met wielen</li>
-                <li><strong>Driver:</strong> L298N H-brug motor driver</li>
-                <li><strong>Voeding:</strong> 12V batterij</li>
+                <li><strong>Microcontroller:</strong> ESP32</li>
+                <li><strong>Display:</strong> TFT of OLED scherm voor tijd en info</li>
+                <li><strong>RTC Module:</strong> DS3231 voor accurate tijd</li>
+                <li><strong>Sensoren:</strong> Licht-, temperatuur- of bewegingssensor</li>
+                <li><strong>Audio:</strong> Buzzer of mini speaker via I2S</li>
+                <li><strong>Netwerk:</strong> WiFi (ESP32)</li>
                 <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
-                <li><strong>Overige:</strong> Breadboard, draden, LEDs, LCD-scherm</li>
+                <li><strong>Interface:</strong> Webinterface of mobiele app</li>
+                <li><strong>Communicatie:</strong> MQTT / HTTP / NTP voor tijd</li>
             </ul>
-        </article>
+        </div>
     </section>
 
-    <section class="row section">
-        <article class="col">
-            <h3 class="section-title">Mogelijke Uitbreidingen</h3>
+    
+
+    <section class="row mb-5">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Mogelijke Uitbreidingen</h2>
             <ul>
-                <li>Gebruik maken van AI of machine learning voor herkenning van parkeerplaatsen</li>
-                <li>Live feedback via een webinterface of app</li>
-                <li>Inbouwen van camera’s voor visuele feedback</li>
-                <li>GPS-integratie voor parkeerlocatie tracking</li>
+                <li>Integratie met Google Calendar voor afspraken</li>
+                <li>Wake-up light met RGB LED strip</li>
+                <li>Spraakbediening via Google Assistant of Alexa</li>
+                <li>Slaapherkenning via microfoon of versnellingsmeter</li>
             </ul>
-        </article>
+        </div>
     </section>
 
-    <section class="row mt-5">
-        <a href="/portofolio.html" class="btn btn-primary col text-center">← Terug naar portfolio</a>
-    </section>
+    <div class="row mt-5">
+        <div class="col text-center">
+            <a href="/portofolio.html" class="btn btn-primary">← Terug naar portfolio</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="row mt-4">
+    <div class="col text-center text-muted small">
+        <hr>
+        <p>
+            <strong>Let op:</strong> Dit project is niet mijn eigendom. De rechten behoren toe aan de oorspronkelijke maker(https://nevonprojects.com/).
+            De gebruikte afbeeldingen zijn eveneens eigendom van hun respectievelijke rechthebbenden.
+        </p>
+    </div>
+</section>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

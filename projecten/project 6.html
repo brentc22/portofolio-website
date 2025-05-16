@@ -1,113 +1,131 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Alarm Clock</title>
+    <title>project6</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
     <link rel="stylesheet" href="/css/style.css">
-  </head>
+
+    
+</head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-    <a class="navbar-brand text-white" href="#">Brent Ceulemans</a>
-    <div>
-      <a class="nav-link d-inline text-white" href="/index.html">home</a>
-      <a class="nav-link d-inline text-white" href="/portofolio.html">portofolio</a>
-      <a class="nav-link d-inline text-white" href="/contact.html">contact</a>
+    <nav class="navbar navbar-expand-md navbar-custom container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/foto/logooooo.png" alt="Brent ceulemans" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active"  href="/index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="/portfolio.html">portofolio</a>
+            </li>
+        
+            <li class="nav-item">
+              <a class="nav-link"  href="/contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<header class="header bg-light py-5">
+    <div class="container">
+        <h1>Smart Alarm Clock</h1>
+        <p class="lead text-muted">Een slimme wekker met connectiviteit, sensoren en persoonlijke aanpassing</p>
     </div>
-  </div>
-</nav>
+</header>
 
-<!-- Header -->
-<div class="header text-center my-5">
-  <h1>Smart Alarm Clock</h1>
-  <p class="text-muted">Een slimme wekker met connectiviteit, sensoren en persoonlijke aanpassing</p>
-</div>
+<main class="container py-5">
+    <section class="row mb-4">
+        <div class="col-md-6">
+            <img src="/assets/foto/project 5.webp" alt="Automatic Parking System" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="section-title mb-3 text-primary">Projectoverzicht</h2>
+            <p>
+                De Smart Alarm Clock is een slimme wekker die veel verder gaat dan alleen een alarm afspelen. 
+                Het apparaat houdt rekening met je slaapritme, lichtsterkte in de kamer, en zelfs het weer, 
+                om je op het ideale moment wakker te maken.
+                Gebruikers kunnen via een webinterface of mobiele app alarmen instellen, thema’s aanpassen, 
+                en integraties activeren zoals Spotify of slimme verlichting.
+            </p>
+        </div>
+    </section>
 
-<!-- Main Content -->
-<div class="container">
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Hoe werkt het?</h2>
+            <p>
+                De wekker synchroniseert met een real-time klokmodule en slaat alarmen op in EEPROM of via een online database. 
+                Slaapmonitoring gebeurt aan de hand van omgevingssensoren of een gekoppelde wearable.
+                Wanneer het tijd is om wakker te worden, kan het systeem zachte verlichting activeren, 
+                muziek afspelen en zelfs live weersinformatie tonen op het display.
+            </p>
+        </div>
+    </section>
 
-  <!-- Afbeelding + korte beschrijving -->
-  <div class="row section align-items-center">
-    <div class="col-md-6">
-      <img src="/assets/foto/project 6.webp" alt="Smart Alarm Clock" class="project-image img-fluid rounded">
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Gebruikte Hardware &amp; Software</h2>
+            <ul>
+                <li><strong>Microcontroller:</strong> ESP32</li>
+                <li><strong>Display:</strong> TFT of OLED scherm voor tijd en info</li>
+                <li><strong>RTC Module:</strong> DS3231 voor accurate tijd</li>
+                <li><strong>Sensoren:</strong> Licht-, temperatuur- of bewegingssensor</li>
+                <li><strong>Audio:</strong> Buzzer of mini speaker via I2S</li>
+                <li><strong>Netwerk:</strong> WiFi (ESP32)</li>
+                <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
+                <li><strong>Interface:</strong> Webinterface of mobiele app</li>
+                <li><strong>Communicatie:</strong> MQTT / HTTP / NTP voor tijd</li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+    <section class="row mb-5">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Mogelijke Uitbreidingen</h2>
+            <ul>
+                <li>Integratie met Google Calendar voor afspraken</li>
+                <li>Wake-up light met RGB LED strip</li>
+                <li>Spraakbediening via Google Assistant of Alexa</li>
+                <li>Slaapherkenning via microfoon of versnellingsmeter</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="row mt-5">
+        <div class="col text-center">
+          <a href="/portfolio.html" class="btn btn-primary">← Terug naar portfolio</a>
+        </div>
     </div>
-    <div class="col-md-6">
-      <h3 class="section-title">Projectoverzicht</h3>
-      <p>
-        De Smart Alarm Clock is een slimme wekker die veel verder gaat dan alleen een alarm afspelen. 
-        Het apparaat houdt rekening met je slaapritme, lichtsterkte in de kamer, en zelfs het weer, 
-        om je op het ideale moment wakker te maken.
-      </p>
-      <p>
-        Gebruikers kunnen via een webinterface of mobiele app alarmen instellen, thema’s aanpassen, 
-        en integraties activeren zoals Spotify of slimme verlichting.
-      </p>
-    </div>
-  </div>
 
-  <!-- Werking -->
-  <div class="row section">
-    <div class="col">
-      <h3 class="section-title">Hoe werkt het?</h3>
-      <p>
-        De wekker synchroniseert met een real-time klokmodule en slaat alarmen op in EEPROM of via een online database. 
-        Slaapmonitoring gebeurt aan de hand van omgevingssensoren of een gekoppelde wearable.
-      </p>
-      <p>
-        Wanneer het tijd is om wakker te worden, kan het systeem zachte verlichting activeren, 
-        muziek afspelen en zelfs live weersinformatie tonen op het display.
-      </p>
-    </div>
-  </div>
+</section>
 
-  <!-- Gebruikte componenten -->
-  <div class="row section">
-    <div class="col">
-      <h3 class="section-title">Gebruikte Hardware & Software</h3>
-      <ul>
-        <li><strong>Microcontroller:</strong> ESP32</li>
-        <li><strong>Display:</strong> TFT of OLED scherm voor tijd en info</li>
-        <li><strong>RTC Module:</strong> DS3231 voor accurate tijd</li>
-        <li><strong>Sensoren:</strong> Licht-, temperatuur- of bewegingssensor</li>
-        <li><strong>Audio:</strong> Buzzer of mini speaker via I2S</li>
-        <li><strong>Netwerk:</strong> WiFi (ESP32)</li>
-        <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
-        <li><strong>Interface:</strong> Webinterface of mobiele app</li>
-        <li><strong>Communicatie:</strong> MQTT / HTTP / NTP voor tijd</li>
-      </ul>
+<section class="row mt-4">
+    <div class="col text-center text-muted small">
+        <hr>
+        <p>
+            <strong>Let op:</strong> Dit project is niet mijn eigendom. De rechten behoren toe aan de oorspronkelijke maker(https://nevonprojects.com/).
+            De gebruikte afbeeldingen zijn eveneens eigendom van hun respectievelijke rechthebbenden.
+        </p>
     </div>
-  </div>
+</section>
+</main>
 
-  <!-- Mogelijke uitbreidingen -->
-  <div class="row section">
-    <div class="col">
-      <h3 class="section-title">Mogelijke Uitbreidingen</h3>
-      <ul>
-        <li>Integratie met Google Calendar voor afspraken</li>
-        <li>Wake-up light met RGB LED strip</li>
-        <li>Spraakbediening via Google Assistant of Alexa</li>
-        <li>Slaapherkenning via microfoon of versnellingsmeter</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Terugknop -->
-  <div class="row mt-5">
-    <div class="col text-center">
-      <a href="/portofolio.html" class="btn btn-primary">← Terug naar portfolio</a>
-    </div>
-  </div>
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,111 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
+    <title>project2</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
     <link rel="stylesheet" href="/css/style.css">
-  </head>
+
+    
+</head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-    <a class="navbar-brand text-white" href="#">Brent Ceulemans</a>
-    <div>
-      <a class="nav-link d-inline text-white" href="/index.html">home</a>
-      <a class="nav-link d-inline text-white" href="/portofolio.html">portofolio</a>
-      <a class="nav-link d-inline text-white" href="/contact.html">contact</a>
+    <nav class="navbar navbar-expand-md navbar-custom container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/foto/logooooo.png" alt="Brent ceulemans" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active"  href="/index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="/portfolio.html">portofolio</a>
+            </li>
+        
+            <li class="nav-item">
+              <a class="nav-link"  href="/contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<header class="header bg-light py-5">
+    <div class="container">
+        <h1>Contactless IOT Doorbell & Security System</h1>
+        <p class="lead text-muted">Een slim en veilig deurbel- en beveiligingssysteem gebaseerd op IoT</p>
     </div>
-  </div>
-</nav>
+</header>
 
-<!-- Header -->
-<div class="header">
-  <h1>Contactless IOT Doorbell & Security System</h1>
-  <p class="text-muted">Een slim en veilig deurbel- en beveiligingssysteem gebaseerd op IoT</p>
-</div>
-
-<!-- Main Content -->
-<div class="container">
-
-  <!-- Afbeelding + korte beschrijving -->
-  <div class="row section">
-    <div class="col-md-6">
-      <img src="/assets/foto/project 2.jpg" alt="Contactless IOT Doorbell & Security System" class="project-image">
-    </div>
-    <div class="col-md-6">
-      <h3 class="section-title">Projectoverzicht</h3>
-      <p>
-        Dit slimme deurbel- en beveiligingssysteem maakt gebruik van IoT-technologie om bezoekers te detecteren zonder fysieke interactie. 
+<main class="container py-5">
+    <section class="row mb-4">
+        <div class="col-md-6">
+            <img src="/assets/foto/project 2.jpg" alt="Automatic Parking System" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="section-title mb-3 text-primary">Projectoverzicht</h2>
+            <p>
+                Dit slimme deurbel- en beveiligingssysteem maakt gebruik van IoT-technologie om bezoekers te detecteren zonder fysieke interactie. 
         Zodra beweging wordt gedetecteerd bij de deur, stuurt het systeem een melding naar een gekoppelde smartphone of webinterface. 
         Het systeem bevat een camera om live beelden te streamen of op te slaan, en een buzzer om bewoners te waarschuwen.
-      </p>
-      <p>
         Het doel is om veilige, contactloze interactie mogelijk te maken en de bewoner in real-time te informeren over bezoekers, 
         zelfs als deze niet thuis is.
-      </p>
-    </div>
-  </div>
+            </p>
+        </div>
+    </section>
 
-  <!-- Werking -->
-  <div class="row section">
-    <div class="col">
-      <h3 class="section-title">Hoe werkt het?</h3>
-      <p>
-        Zodra de bewegingssensor een persoon detecteert, activeert de microcontroller een camera en verzendt het een melding 
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Hoe werkt het?</h2>
+            <p>
+                Zodra de bewegingssensor een persoon detecteert, activeert de microcontroller een camera en verzendt het een melding 
         via WiFi naar een gekoppeld apparaat. De buzzer gaat af en de gebruiker krijgt de mogelijkheid om via een app of 
         browser te communiceren of live mee te kijken.
-      </p>
-      <p>
-        Alle componenten worden realtime aangestuurd door een ESP32 en communiceren via MQTT of HTTP requests naar een lokale server of cloudplatform.
-      </p>
-    </div>
-  </div>
+            </p>
+            <p>
+                Alle componenten worden realtime aangestuurd door een ESP32 en communiceren via MQTT of HTTP requests naar een lokale server of cloudplatform.
 
-  <!-- Gebruikte componenten -->
-  <div class="row section">
-    <div class="col">
-      <h3 class="section-title">Gebruikte Hardware & Software</h3>
-      <ul>
-        <li><strong>Microcontroller:</strong> ESP32</li>
-        <li><strong>Sensoren:</strong> PIR bewegingssensor</li>
-        <li><strong>Camera:</strong> ESP32-CAM module</li>
-        <li><strong>Signaal:</strong> Buzzer / LED</li>
-        <li><strong>Netwerk:</strong> WiFi via ESP32</li>
-        <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
-        <li><strong>Communicatie:</strong> MQTT of HTTP</li>
-      </ul>
-    </div>
-  </div>
+            </p>
+        </div>
+    </section>
 
-  <!-- Mogelijke uitbreidingen -->
-  <div class="row section">
-    <div class="col">
-      <h3 class="section-title">Mogelijke Uitbreidingen</h3>
-      <ul>
-        <li>Gezichtsherkenning met AI voor automatische toegangscontrole</li>
-        <li>Cloud-opslag van videobeelden</li>
-        <li>Integratie met smart home systemen (zoals Home Assistant)</li>
-        <li>Voedingsoptie via zonnepaneel</li>
-      </ul>
-    </div>
-  </div>
+    <section class="row mb-4">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Gebruikte Hardware &amp; Software</h2>
+            <ul>
+                <li><strong>Microcontroller:</strong> ESP32</li>
+                <li><strong>Sensoren:</strong> PIR bewegingssensor</li>
+                <li><strong>Camera:</strong> ESP32-CAM module</li>
+                <li><strong>Signaal:</strong> Buzzer / LED</li>
+                <li><strong>Netwerk:</strong> WiFi via ESP32</li>
+                <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
+                <li><strong>Communicatie:</strong> MQTT of HTTP</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Terugknop -->
-  <div class="row mt-5">
-    <div class="col text-center">
-      <a href="/portofolio.html" class="btn btn-primary">← Terug naar portfolio</a>
+    
+
+    <section class="row mb-5">
+        <div class="col">
+            <h2 class="section-title mb-3 text-primary">Mogelijke Uitbreidingen</h2>
+            <ul>
+                <li>Gezichtsherkenning met AI voor automatische toegangscontrole</li>
+                <li>Cloud-opslag van videobeelden</li>
+                <li>Integratie met smart home systemen (zoals Home Assistant)</li>
+                <li>Voedingsoptie via zonnepaneel</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="row mt-5">
+        <div class="col text-center">
+            <a href="/portfolio.html" class="btn btn-primary">← Terug naar portfolio</a>
+        </div>
     </div>
-  </div>
-</div>
+
+</section>
+
+<section class="row mt-4">
+    <div class="col text-center text-muted small">
+        <hr>
+        <p>
+            <strong>Let op:</strong> Dit project is niet mijn eigendom. De rechten behoren toe aan de oorspronkelijke maker(https://nevonprojects.com/).
+            De gebruikte afbeeldingen zijn eveneens eigendom van hun respectievelijke rechthebbenden.
+        </p>
+    </div>
+</section>
+</main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
