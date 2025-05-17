@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +14,10 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/weather-api.css">
     <script src="/JS/weather-api.js" defer></script>
+    <script src="/JS/package.json" defer></script>
+  <link rel="stylesheet" href="/css/reset.css">
 
-    
+
 </head>
 <body>
 
@@ -24,45 +25,44 @@
         <a class="navbar-brand" href="#"><img src="/assets/foto/logooooo.png" alt="Brent ceulemans" width="100" height="100">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active"  href="/index.html">home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link "  href="/portfolio.html">portofolio</a>
-            </li>
-        
-            <li class="nav-item">
-              <a class="nav-link"  href="/contact.html">contact</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active"   href="/index.html">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "   href="/portfolio.html">portofolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"   href="/contact.html">contact</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
 <header class="header bg-light py-5">
     <div class="container">
-        <h1>Contactless IOT Doorbell & Security System</h1>
-        <p class="lead text-muted">Een slim en veilig deurbel- en beveiligingssysteem gebaseerd op IoT</p>
+        <h1>Smart Irrigation System</h1>
+        <p class="lead text-muted">Een intelligent irrigatiesysteem gebaseerd op IoT-technologie voor efficiënt waterbeheer.</p>
     </div>
 </header>
 
 <main class="container py-5">
     <section class="row mb-4">
         <div class="col-md-6">
-            <img src="/assets/foto/project 2.jpg" alt="Automatic Parking System" class="img-fluid rounded shadow-sm">
+            <img src="/assets/foto/project 5.webp" alt="Smart Irrigation System" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center">
             <h2 class="section-title mb-3 text-primary">Projectoverzicht</h2>
             <p>
-                Dit slimme deurbel- en beveiligingssysteem maakt gebruik van IoT-technologie om bezoekers te detecteren zonder fysieke interactie. 
-        Zodra beweging wordt gedetecteerd bij de deur, stuurt het systeem een melding naar een gekoppelde smartphone of webinterface. 
-        Het systeem bevat een camera om live beelden te streamen of op te slaan, en een buzzer om bewoners te waarschuwen.
-        Het doel is om veilige, contactloze interactie mogelijk te maken en de bewoner in real-time te informeren over bezoekers, 
-        zelfs als deze niet thuis is.
+                Dit slimme irrigatiesysteem maakt gebruik van IoT-technologie om de bewatering van planten en gazons te optimaliseren.
+                Het systeem meet continu de bodemvochtigheid en past de watergift automatisch aan op basis van deze metingen
+                en actuele weersvoorspellingen. Hierdoor wordt waterverspilling geminimaliseerd en een optimale groei van de beplanting gegarandeerd.
+                Het systeem kan op afstand worden gemonitord en bediend via een smartphone-app of webinterface.
             </p>
         </div>
     </section>
@@ -71,20 +71,21 @@
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Hoe werkt het?</h2>
             <p>
-                Zodra de bewegingssensor een persoon detecteert, activeert de microcontroller een camera en verzendt het een melding 
-        via WiFi naar een gekoppeld apparaat. De buzzer gaat af en de gebruiker krijgt de mogelijkheid om via een app of 
-        browser te communiceren of live mee te kijken.
+                Het systeem bestaat uit bodemvochtigheidssensoren die in de grond zijn geplaatst en een centrale microcontroller
+                die deze data uitleest. Op basis van de gemeten vochtigheidswaarden en informatie over de weersverwachting (via een API),
+                stuurt de microcontroller de waterkleppen aan om de bewatering te starten of te stoppen.
             </p>
             <p>
-                Alle componenten worden realtime aangestuurd door een ESP32 en communiceren via MQTT of HTTP requests naar een lokale server of cloudplatform.
-
+                Gebruikers kunnen via een app of webinterface de actuele status van de bewatering bekijken, schema's instellen
+                en handmatig ingrijpen indien nodig. De communicatie tussen de sensoren, de microcontroller en het online platform
+                verloopt via WiFi of andere draadloze protocollen.
             </p>
         </div>
     </section>
 
     <section>
       <h2 class="section-title mb-3 text-primary">Huidig Weer</h2>
-      
+
 
     <div id="weather-container">
         </div>
@@ -97,27 +98,27 @@
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Gebruikte Hardware &amp; Software</h2>
             <ul>
-                <li><strong>Microcontroller:</strong> ESP32</li>
-                <li><strong>Sensoren:</strong> PIR bewegingssensor</li>
-                <li><strong>Camera:</strong> ESP32-CAM module</li>
-                <li><strong>Signaal:</strong> Buzzer / LED</li>
-                <li><strong>Netwerk:</strong> WiFi via ESP32</li>
-                <li><strong>Software:</strong> Arduino IDE / PlatformIO</li>
-                <li><strong>Communicatie:</strong> MQTT of HTTP</li>
+                <li><strong>Microcontroller:</strong> ESP32 of Arduino</li>
+                <li><strong>Sensoren:</strong> Bodemvochtigheidssensoren</li>
+                <li><strong>Waterkleppen:</strong> Elektrisch gestuurde waterkleppen</li>
+                <li><strong>Netwerk:</strong> WiFi</li>
+                <li><strong>Software:</strong> Arduino IDE / PlatformIO, mogelijk een cloudplatform (bijv. Firebase, AWS IoT)</li>
+                <li><strong>Communicatie:</strong> MQTT of HTTP API's voor weerdata</li>
             </ul>
         </div>
     </section>
 
-    
+
 
     <section class="row mb-5">
         <div class="col">
             <h2 class="section-title mb-3 text-primary">Mogelijke Uitbreidingen</h2>
             <ul>
-                <li>Gezichtsherkenning met AI voor automatische toegangscontrole</li>
-                <li>Cloud-opslag van videobeelden</li>
-                <li>Integratie met smart home systemen (zoals Home Assistant)</li>
-                <li>Voedingsoptie via zonnepaneel</li>
+                <li>Integratie met regenmeters voor nauwkeurigere bewatering</li>
+                <li>Flowmeters om het daadwerkelijke waterverbruik te meten</li>
+                <li>Zonnesensor om de intensiteit van de zon mee te nemen in de berekeningen</li>
+                <li>Geavanceerde algoritmen voor voorspellende bewatering op basis van planttype en groeistadium</li>
+                <li>Bediening via spraakassistenten</li>
             </ul>
         </div>
     </section>
@@ -134,8 +135,8 @@
     <div class="col text-center text-muted small">
         <hr>
         <p>
-            <strong>Let op:</strong> Dit project is niet mijn eigendom. De rechten behoren toe aan de oorspronkelijke maker(https://nevonprojects.com/).
-            De gebruikte afbeeldingen zijn eveneens eigendom van hun respectievelijke rechthebbenden.
+            <strong>Let op:</strong> Dit project is een conceptuele aanpassing van een bestaand project. De basisstructuur van de code is behouden, maar de inhoud is gewijzigd om een slim irrigatiesysteem te beschrijven.
+            De gebruikte afbeelding is eveneens ter illustratie en mogelijk niet direct gerelateerd aan dit concept.
         </p>
     </div>
 </section>
