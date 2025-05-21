@@ -1,3 +1,4 @@
+
 @media (min-width: 992px) {
   /*nav*/
   .navbar-custom {
@@ -21,12 +22,17 @@
     border-radius: 8px;
   }
 
-  body {
+  .body {
     text-align: center;
+    color: #f8f9fa;
   }
 
   section {
     margin-top: 50px;
+  }
+  
+  .mijn-projecten {
+    text-align: center;
   }
 
   article {
@@ -82,7 +88,7 @@
   }
 
   .header {
-    background-color: #e9ecef;
+    background-color: #f8f9fa;
     padding: 4rem 0;
     text-align: center;
   }
@@ -94,6 +100,7 @@
 
   .container {
     padding: 2rem;
+    background-color:#f8f9fa ;
   }
 
   .section {
@@ -166,23 +173,27 @@
 
   .container {
     display: block;
+    background-color:#f8f9fa ;
   }
 
   .container > article {
     width: 100%;
     margin-bottom: 20px;
     display: block;
+    background-color:#f8f9fa ;
   }
 
   .container > section {
     display: block;
     margin-top: 20px;
+    background-color:#f8f9fa ;
   }
 
   .container > section > article {
     width: 100%;
     margin-bottom: 20px;
     display: block;
+    background-color:#f8f9fa ;
   }
 
   article {
@@ -208,8 +219,6 @@
 
   .mijn-projecten {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
   }
 
   .knop-contact {
