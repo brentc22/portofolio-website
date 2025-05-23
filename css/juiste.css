@@ -1,0 +1,237 @@
+
+@media (min-width: 992px) {
+    /*nav*/
+    .navbar-custom {
+      background-color: #3398ff;
+    }
+  
+    .navbar-custom .navbar-nav .nav-link {
+      color: white;
+    }
+  
+    .navbar-custom .navbar-nav .nav-link:hover {
+      color: #FFD700;
+    }
+  
+  
+    /*portofolio*/
+    .project-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .body {
+      text-align: center;
+      color: #f8f9fa;
+    }
+  
+    section {
+      margin-top: 50px;
+    }
+    
+    .mijn-projecten {
+      text-align: center;
+    }
+  
+    article {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #007bff;
+      color: white;
+      padding: 15px;
+      vertical-align: top;
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    h5 {
+      color: white;
+      font-weight: bold;
+    }
+  
+    button {
+      background-color: #007bff;
+      color: white;
+      border-radius: 50px;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+    }
+  
+    /*detail pagina*/
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+  
+    .navbar {
+      background-color: #007bff;
+      padding: 1rem 0;
+    }
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .nav-link {
+      margin-left: 1rem;
+    }
+  
+    .header {
+      background-color: #f8f9fa;
+      padding: 4rem 0;
+      text-align: center;
+    }
+  
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .container {
+      padding: 2rem;
+      background-color:#f8f9fa ;
+    }
+  
+    .section {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+  
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+  
+    .project-image {
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+  
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  
+    li {
+      margin-bottom: 0.5rem;
+    }
+  
+    /*contact pagina*/
+  
+    .tekst {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+      text-align: center;
+    }
+  
+    .links {
+      padding-right: 20px;
+      max-width: 50%;
+    }
+  
+    .rechts {
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 991.98px) {
+    .navbar-custom {
+      background-color: #3398ff;
+    }
+  
+    .navbar-brand img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .navbar-custom .navbar-nav .nav-link {
+      color: white;
+    }
+  
+    .navbar-custom .navbar-nav .nav-link:hover {
+      color: #FFD700;
+    }
+  
+    .container {
+      display: block;
+      background-color:#f8f9fa ;
+    }
+  
+    .container > article {
+      width: 100%;
+      margin-bottom: 20px;
+      display: block;
+      background-color:#f8f9fa ;
+    }
+  
+    .container > section {
+      display: block;
+      margin-top: 20px;
+      background-color:#f8f9fa ;
+    }
+  
+    .container > section > article {
+      width: 100%;
+      margin-bottom: 20px;
+      display: block;
+      background-color:#f8f9fa ;
+    }
+  
+    article {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #007bff;
+      color: white;
+      padding: 15px;
+      vertical-align: top;
+    }
+  
+    button {
+      background-color: #007bff;
+      color: white;
+      border-radius: 50px;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+    }
+  
+    .mijn-projecten {
+      text-align: center;
+    }
+  
+    .knop-contact {
+      background-color: #2196f3;
+      border-color: #2196f3;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .rechts {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
