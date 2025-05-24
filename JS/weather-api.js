@@ -5,10 +5,10 @@
         const weatherContainer = document.getElementById("weather-container");
         const errorDisplay = document.getElementById('error');
 
-        const units = 'metric'; // Gebruik metrische eenheden
-        const lang = 'nl'; // Taal instellen op Nederlands
+        const units = 'metric'; 
+        const lang = 'nl'; 
 
-        // Coördinaten voor Lier, Vlaanderen, België
+      
         const lierLatitude = 51.1333;
         const lierLongitude = 4.5667;
 
@@ -17,13 +17,12 @@
                 weatherContainer.innerHTML = '';
                 errorDisplay.innerHTML = '';
 
-                // Bouw de API URL voor de huidige weersomstandigheden
+               
                 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lierLatitude}&lon=${lierLongitude}&appid=${apiKey}&units=${units}&lang=${lang}`;
 
                 const response = await fetch(apiUrl);
                 const data = await response.json();
 
-                // Toon een foutmelding als er een probleem is met de API-aanvraag
                 if (data.cod != 200) {
                     errorDisplay.innerHTML = `Fout bij het ophalen van de weergegevens: ${data.message}`;
                     console.error('OpenWeatherMap API Fout:', data);
@@ -52,5 +51,4 @@
             }
         }
 
-        // Roep de functie aan om de huidige weerinformatie voor Lier op te halen wanneer de pagina laadt
         fetchCurrentWeatherForLier();

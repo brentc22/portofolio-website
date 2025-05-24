@@ -1,176 +1,224 @@
 
+@media (min-width: 992px) {
+  /*nav*/
+  .navbar-custom {
+    background-color: #3398ff;
+  }
 
-/* nav Bar */
-.navbar-custom {
-  background-color: #3398ff;
-}
+  .navbar-custom .navbar-nav .nav-link {
+    color: white;
+  }
 
-.navbar-custom .navbar-nav .nav-link {
-  color: white;
-}
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #FFD700;
+  }
 
-.navbar-custom .navbar-nav .nav-link:hover {
-  color: #FFD700;
-}
 
-body {
-  font-family: sans-serif;
-  background-color: #f8f9fa;
-}
+  /*portfolio*/
+  .project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 
-section {
-  margin-top: 50px;
-}
+  .body {
+    text-align: center;
+    color: #f8f9fa;
+  }
 
-.container {
-  padding: 2rem;
-  background-color: #f8f9fa;
-}
+  section {
+    margin-top: 50px;
+  }
+  
+  .mijn-projecten {
+    text-align: center;
+  }
 
-/*Portfolio Styling */
-.project-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
+  article {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    vertical-align: top;
+  }
 
-.mijn-projecten {
-  text-align: center;
-}
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
 
-article {
-  display: inline-block;
-  width: 30%;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #007bff;
-  color: white;
-  padding: 15px;
-  vertical-align: top;
-}
+  h5 {
+    color: white;
+    font-weight: bold;
+  }
 
-img {
-  width: 100%;
-  border-radius: 10px;
-}
+  button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+  }
 
-h5 {
-  color: white;
-  font-weight: bold;
-}
+  /*detail pagina*/
+  body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
 
-button {
-  background-color: #007bff;
-  color: white;
-  border-radius: 50px;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 20px;
-}
+  .navbar {
+    background-color: #007bff;
+    padding: 1rem 0;
+  }
 
-/* Detail Pagina */
-.navbar {
-  background-color: #007bff;
-  padding: 1rem 0;
-}
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+  .nav-link {
+    margin-left: 1rem;
+  }
 
-.nav-link {
-  margin-left: 1rem;
-}
+  .header {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+  }
 
-.header {
-  background-color: #f8f9fa;
-  padding: 4rem 0;
-  text-align: center;
-}
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
 
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
+  .container {
+    padding: 2rem;
+    background-color:#f8f9fa ;
+  }
 
-.section {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
+  .section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
 
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #007bff;
-}
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
 
-.project-image {
-  width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
+  .project-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-li {
-  margin-bottom: 0.5rem;
-}
+  li {
+    margin-bottom: 0.5rem;
+  }
 
-/* Contact Pagina */
-.tekst {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-  text-align: center;
-}
+  /*contact pagina*/
 
-.links {
-  padding-right: 20px;
-  max-width: 50%;
-}
+  .tekst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    text-align: center;
+  }
 
-.rechts {
-  max-width: 50%;
+  .links {
+    padding-right: 20px;
+    max-width: 50%;
+  }
+
+  .rechts {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 991.98px) {
+  .navbar-custom {
+    background-color: #3398ff;
+  }
 
   .navbar-brand img {
     width: 60px;
     height: 60px;
   }
 
+  .navbar-custom .navbar-nav .nav-link {
+    color: white;
+  }
+
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #FFD700;
+  }
+
   .container {
     display: block;
-
+    background-color:#f8f9fa ;
   }
 
   .container > article {
     width: 100%;
     margin-bottom: 20px;
     display: block;
+    background-color:#f8f9fa ;
   }
 
   .container > section {
     display: block;
     margin-top: 20px;
+    background-color:#f8f9fa ;
   }
 
   .container > section > article {
     width: 100%;
     margin-bottom: 20px;
     display: block;
+    background-color:#f8f9fa ;
+  }
+
+  article {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    vertical-align: top;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .mijn-projecten {
+    text-align: center;
   }
 
   .knop-contact {
